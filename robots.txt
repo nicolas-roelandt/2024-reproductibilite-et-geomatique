@@ -1,0 +1,1 @@
+Sitemap: https://nicolas-roelandt.github.io/2024-reproductibilite-et-geomatique/sitemap.xml
