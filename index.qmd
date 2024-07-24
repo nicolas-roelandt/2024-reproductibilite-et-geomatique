@@ -1,0 +1,33 @@
+---
+title: "Reproductibilité et géomatique"
+author:
+  - name: Timothée Giraud
+    orcid: 0000-0002-1932-3323
+    affiliations: 
+      - ref: riate
+  - name: Nicolas Roelandt
+    orcid: 0000-0001-9698-4275
+    affiliations: 
+      - ref: ame
+
+affiliations:
+  - id: ame
+    name: Univ. Eiffel/AME
+    city: Lyon
+    state: France
+    url: https://ame.univ-gustave-eiffel.fr/
+  - id: riate
+    name: CNRS/RIATE
+    city: Paris
+    state: France
+    url: https://riate.cnrs.fr/
+format: revealjs
+---
+
+This is a Quarto website.
+
+To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+
+```{r}
+1 + 1
+```

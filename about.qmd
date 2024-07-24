@@ -1,0 +1,7 @@
+---
+title: "About"
+---
+
+This presentation has been created for the French Reproducible Research Network webinar to present GIS and reproductibility issues.
+
+Code source is under EUPL 1.2 licence, presentation is under a CC BY-SA licence.
