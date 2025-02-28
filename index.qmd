@@ -51,12 +51,14 @@ Mobilisation des mêmes outils
 - Culture géographique vs culture informatique
 
 ## Variabilité des jeux de données de référence
-  - utilisation massive de jeux de données de référence
+
+- utilisation massive de jeux de données de référence
     - traitements spatiaux
-    - 
-  -   pas d'identifiants uniques à la publication
-  -   exemple : fusion/défusion de communes
-  -   pas d'historique des jeux de données IGN avant 2017
+-   pas d'identifiants uniques à la publication
+  - au mieux des URL "stables"
+- Variabilité importante
+  - fusion/défusion de communes : 1 jeu de données/mois
+  - pas d'historique des jeux de données IGN avant 2017
 
 ## Culture géographique vs culture informatique
 
@@ -73,14 +75,15 @@ Mobilisation des mêmes outils
   
 ## A venir
 
-École Thématique Science Ouverte pour les SHS - juin 2025
+### École Thématique Science Ouverte pour les SHS - juin 2025
 
-https://so-shs.gitpages.huma-num.fr/
+- Inscriptions ouvertes jusqu’au 31 mars 2025
+- </https://so-shs.gitpages.huma-num.fr/>
 
-Les inscriptions sont ouvertes jusqu’au 31 mars 2025 :
+### SAGEO 2025
 
-https://groupes.renater.fr/limesurvey/index.php/576632
-
+Porté par le GdR MAGIS (Méthodes et Applications pour la Géomatique et l'Information Spatiale)
+https://sageo2025.sciencesconf.org/
 
 
 
