@@ -24,6 +24,63 @@ affiliations:
 format: revealjs
 ---
 
-This is a Quarto website.
+## Qu'est ce que la géomatique ? 
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+<!--public ESR mais non géographe -->
+
+##  Reproductibilité computationnelle en géomatique
+ 
+- Python (geopandas, QGIS, pyGMT)
+- R (sf, spdep, RGRASS, qgis-processing, Mapsf/tmap)
+ 
+## Reproductibilité des environnements
+
+Mobilisation des mêmes outils
+
+### Outils construits autour des langages
+  - Python: Venv, Conda/Mamba
+  - R: Renv
+
+### Esotérisme (aka black magic stuff)
+  - Guix
+  - Rix
+
+
+## Problématiques
+- Variabilité des jeux de données de référence
+- Culture géographique vs culture informatique
+
+## Variabilité des jeux de données de référence
+  - utilisation massive de jeux de données de référence
+    - traitements spatiaux
+    - 
+  -   pas d'identifiants uniques à la publication
+  -   exemple : fusion/défusion de communes
+  -   pas d'historique des jeux de données IGN avant 2017
+
+## Culture géographique vs culture informatique
+
+- Géographie humaine : 
+  - parcours très littéraire
+  - branche quantitativiste très active
+  - intérêt pour la programmation lettrée
+  
+- manque de culture informatique
+  - frein à la prise en main des outils programmatiques
+- recherche d'une esthétique des cartes difficilement reproductible 
+  - artisan de la carte
+  - compromis esthétique vs reproductibilité
+  
+## A venir
+
+École Thématique Science Ouverte pour les SHS - juin 2025
+
+https://so-shs.gitpages.huma-num.fr/
+
+Les inscriptions sont ouvertes jusqu’au 31 mars 2025 :
+
+https://groupes.renater.fr/limesurvey/index.php/576632
+
+
+
+
