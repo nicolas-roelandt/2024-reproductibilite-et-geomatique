@@ -1,5 +1,6 @@
 ---
-title: "Reproductibilité et géomatique"
+title: "Reproductibilité et Géomatique"
+
 author:
   - name: Timothée Giraud
     orcid: 0000-0002-1932-3323
@@ -9,81 +10,181 @@ author:
     orcid: 0000-0001-9698-4275
     affiliations: 
       - ref: ame
-
 affiliations:
   - id: ame
-    name: Univ. Eiffel/AME
+    name: Univ. Eiffel / AME
     city: Lyon
     state: France
     url: https://ame.univ-gustave-eiffel.fr/
   - id: riate
-    name: CNRS/RIATE
+    name: CNRS / UAR RIATE
     city: Paris
     state: France
     url: https://riate.cnrs.fr/
-format: revealjs
+
+date: 28 03 2025
+date-format: "D MMM YYYY"
+bibliography: references.bib
+lang: fr
+csl: "universite-de-montreal-apa.csl"
+highlight-style: kate
+
+format: 
+  revealjs:
+    auto-stretch: false
+    preview-links: false
+    fig-align: center
+    smaller: true
+    show-slide-number: all
+    slide-number: true
+    code-line-numbers: true
+    width: 1050
+    height: 700
+    
+knitr:
+  opts_chunk:
+    fig.path: "figs/"
+    cache.path: "cache/"
+    fig.align: "center"
+    comment: "" 
+    
+execute:
+  echo: true
+  output: true
+  warning: true
+  include: true
+  cache: true
 ---
 
-## Qu'est ce que la géomatique ? 
 
-<!--public ESR mais non géographe -->
+## Proposition de plan
 
-##  Reproductibilité computationnelle en géomatique
- 
+1- C'est quoi la géomatique
+
+2- Les spécificités de la géomatique à l'égard de la reproductibilité  
+ a- la culture  
+   => très shs  
+   => utilisation généralisée de gui)  
+ b- les données   
+   => raster/vecteur,   
+   => données lourdes,   
+   => données qui changent   
+   => XKCD sur la précision, la généralisation adaptée aux échelles d'analyse  
+ c- les pratiques   
+   => la carto en dao (pas reproductible)  
+   => le trèfles de NicoLambert (art/technique/infographie/?)  
+
+3- Les solutions   
+ a- technique   
+    spécifique au domaine   
+      =>  GEOS, GDAL, PROJ  
+      => adaptation de ggplot2  
+      => rgdal/maptools prise en compte par la communauté de ces questions  
+      => kart (https://kartproject.org/)  
+    celles utilisées ailleurs marchent aussi => venv, renv  
+      => docker  
+      => guix / nix  
+ b- infrastructure  
+    => o2r, codecheck etc.  
+ c- la formation (formation initiale, formation continue)  
+    => dans les masters (SAS=>R)  
+    => écoles thématiques (SIGR, SAGEO)  
+
+
+
+## Qu'est ce que la géomatique ?
+
+>La géomatique (...) regroupe l'ensemble des outils et méthodes permettant d'acquérir, de représenter, d'analyser et d'intégrer des données géographiques.   
+La géomatique consiste donc en au moins trois activités distinctes : **collecte**, **traitement** et **diffusion** des données géographiques. 
+
+[Wikipedia](https://fr.wikipedia.org/wiki/G%C3%A9omatique)
+
+Sciences de l'info géo
+
+
+## 
+
+
+
+
+## Reproductibilité computationnelle en géomatique
+
 - Python (geopandas, QGIS, pyGMT)
 - R (sf, spdep, RGRASS, qgis-processing, Mapsf/tmap)
- 
+
 ## Reproductibilité des environnements
 
 Mobilisation des mêmes outils
 
 ### Outils construits autour des langages
-  - Python: Venv, Conda/Mamba
-  - R: Renv
 
-### Esotérisme (aka black magic stuff)
-  - Guix
-  - Rix
+- Python : Venv, Conda/Mamba
+- R : renv, CRAN, groundhog
+
+### Containers, Package managers
+
+- Guix
+- Rix
+- https://hub.docker.com/r/rocker/geospatial
 
 
 ## Problématiques
+
 - Variabilité des jeux de données de référence
 - Culture géographique vs culture informatique
+- Utilisation massive des GUI
+
+> "The use of graphical user interface (GUI) in computer sciences in general and cartography in particular is irrefutably a step toward more user-friendliness. But this step comes at the price of the growth of, if not impossible, at least difficult reproducible procedures. (...)   
+Scripting solutions can appear as a step back for cartographers that learn computed cartography with proprietary software languages (ARC Macro Language designed by ESRI in 1986, or SAS macros). We argue that, in the reproducible research framework, researchers have to use literate programming solutions that enable the full traceability of their studies."
+
+Giraud, Lambert 2017
+
 
 ## Variabilité des jeux de données de référence
 
-- utilisation massive de jeux de données de référence
-    - traitements spatiaux
+-   utilisation massive de jeux de données de référence
+    -   traitements spatiaux
 -   pas d'identifiants uniques à la publication
-  - au mieux des URL "stables"
-- Variabilité importante
-  - fusion/défusion de communes : 1 jeu de données/mois
-  - pas d'historique des jeux de données IGN avant 2017
+-   au mieux des URL "stables"
+-   Variabilité importante
+    -   fusion/défusion de communes : 1 jeu de données/mois
+    -   pas d'historique des jeux de données IGN avant 2017
 
 ## Culture géographique vs culture informatique
 
-- Géographie humaine : 
-  - parcours très littéraire
-  - branche quantitativiste très active
-  - intérêt pour la programmation lettrée
-  
-- manque de culture informatique
-  - frein à la prise en main des outils programmatiques
-- recherche d'une esthétique des cartes difficilement reproductible 
-  - artisan de la carte
-  - compromis esthétique vs reproductibilité
-  
+-   Géographie humaine :
+    -   parcours très littéraire
+    -   branche quantitativiste très active
+    -   intérêt pour la programmation lettrée
+-   manque de culture informatique
+    -   frein à la prise en main des outils programmatiques
+-   recherche d'une esthétique des cartes difficilement reproductible
+    -   artisan de la carte
+    -   compromis esthétique vs reproductibilité
+
 ## A venir
 
-### École Thématique Science Ouverte pour les SHS - juin 2025
+### École Thématique Science Ouverte pour les SHS : scripts, codes et logiciels - 22-27 juin 2025
 
-- Inscriptions ouvertes jusqu’au 31 mars 2025
-- </https://so-shs.gitpages.huma-num.fr/>
+-   Inscriptions ouvertes jusqu’au 31 mars 2025
+-   [https://so-shs.gitpages.huma-num.fr](https://so-shs.gitpages.huma-num.fr)
 
-### SAGEO 2025
+### SAGEO - 19-23 mai 2025
 
-Porté par le GdR MAGIS (Méthodes et Applications pour la Géomatique et l'Information Spatiale)
-https://sageo2025.sciencesconf.org/
+Porté par le GdR MAGIS (Méthodes et Applications pour la Géomatique et l'Information Spatiale) https://sageo2025.sciencesconf.org/
+
+[École méthodologique](https://et-magis2025.sciencesconf.org/) : Robustesse dans les méthodologies des Sciences de l'Information Géographique
 
 
 
+## References
+
+Nüst, D., & Pebesma, E. (2020). **Practical Reproducibility in Geography and Geosciences**. Annals of the American Association of Geographers, 111(5), 1300–1310. https://doi.org/10.1080/24694452.2020.1806028
+
+Bivand R.S. (2021). **Progress in the R ecosystem for representing and handling spatial data**.
+Journal of Geographical Systems, 23(4), 515-546. https://doi.org/10.1007/s10109-020-
+00336-
+
+[o2r](https://o2r.info/about/)
+
+Giraud, T., Lambert, N. (2017). **Reproducible Cartography**. In: Peterson, M. (eds) Advances in Cartography and GIScience. ICACI 2017. Lecture Notes in Geoinformation and Cartography(). Springer, Cham. https://doi.org/10.1007/978-3-319-57336-6_13
