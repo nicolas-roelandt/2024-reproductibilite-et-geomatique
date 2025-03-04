@@ -56,6 +56,42 @@ execute:
   cache: true
 ---
 
+
+## Proposition de plan
+
+1- C'est quoi la géomatique
+
+2- Les spécificités de la géomatique à l'égard de la reproductibilité  
+ a- la culture  
+   => très shs  
+   => utilisation généralisée de gui)  
+ b- les données   
+   => raster/vecteur,   
+   => données lourdes,   
+   => données qui changent   
+   => XKCD sur la précision, la généralisation adaptée aux échelles d'analyse  
+ c- les pratiques   
+   => la carto en dao (pas reproductible)  
+   => le trèfles de NicoLambert (art/technique/infographie/?)  
+
+3- Les solutions   
+ a- technique   
+    spécifique au domaine   
+      =>  GEOS, GDAL, PROJ  
+      => adaptation de ggplot2  
+      => rgdal/maptools prise en compte par la communauté de ces questions  
+      => kart (https://kartproject.org/)  
+    celles utilisées ailleurs marchent aussi => venv, renv  
+      => docker  
+      => guix / nix  
+ b- infrastructure  
+    => o2r, codecheck etc.  
+ c- la formation (formation initiale, formation continue)  
+    => dans les masters (SAS=>R)  
+    => écoles thématiques (SIGR, SAGEO)  
+
+
+
 ## Qu'est ce que la géomatique ?
 
 >La géomatique (...) regroupe l'ensemble des outils et méthodes permettant d'acquérir, de représenter, d'analyser et d'intégrer des données géographiques.   
@@ -63,11 +99,18 @@ La géomatique consiste donc en au moins trois activités distinctes : **collect
 
 [Wikipedia](https://fr.wikipedia.org/wiki/G%C3%A9omatique)
 
+Sciences de l'info géo
+
+
+## 
+
+
+
 
 ## Reproductibilité computationnelle en géomatique
 
--   Python (geopandas, QGIS, pyGMT)
--   R (sf, spdep, RGRASS, qgis-processing, Mapsf/tmap)
+- Python (geopandas, QGIS, pyGMT)
+- R (sf, spdep, RGRASS, qgis-processing, Mapsf/tmap)
 
 ## Reproductibilité des environnements
 
