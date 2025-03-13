@@ -69,13 +69,32 @@ execute:
 Proposition de plan
 
 # C'est quoi la géomatique ?
+
+## C'est quoi la géomatique ?
+
+::: {.r-stack}
+![](./images/geodata.png){.fragment width="900"}
+
+![](./images/like_google_maps.png){.fragment width="900"}
+
+![](./images/yes_like_google_maps.png){.fragment width="900"}
+
+![Extrait de What we do in the Shadows](./images/more_layers.png){.fragment width="900"}
+:::
+
+
 ## 
 >La géomatique (...) regroupe l'ensemble des outils et méthodes permettant d'acquérir, de représenter, d'analyser et d'intégrer des données géographiques.   
 La géomatique consiste donc en au moins trois activités distinctes : **collecte**, **traitement** et **diffusion** des données géographiques. 
 
 [Wikipedia](https://fr.wikipedia.org/wiki/G%C3%A9omatique)
 
-Sciences de l'info géo
+. . .
+
+::: {.r-fit-text .center}
+Sciences de l'information géographique
+:::
+
 
 
 # Les spécificités de la géomatique à l'égard de la reproductibilité  
