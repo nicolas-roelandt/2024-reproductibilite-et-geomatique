@@ -40,7 +40,16 @@ format:
     code-line-numbers: true
     width: 1050
     height: 700
-    
+    embed-resources: true
+    footer: "Webinaire Recherche Reproductible - 28 mars 2025" 
+logo: ./images/FRRN_logo_small.png
+title-slide-attributes: 
+  data-background-image: ./images/logos.svg
+  data-background-size: 75%
+  data-background-position: bottom 125px center
+  data-background-opacity: "0.95"
+slide-number: true
+ 
 knitr:
   opts_chunk:
     fig.path: "figs/"
@@ -57,15 +66,23 @@ execute:
 ---
 
 
-## Proposition de plan
+Proposition de plan
 
-1- C'est quoi la géomatique
+# C'est quoi la géomatique ?
+## 
+>La géomatique (...) regroupe l'ensemble des outils et méthodes permettant d'acquérir, de représenter, d'analyser et d'intégrer des données géographiques.   
+La géomatique consiste donc en au moins trois activités distinctes : **collecte**, **traitement** et **diffusion** des données géographiques. 
 
-2- Les spécificités de la géomatique à l'égard de la reproductibilité  
- a- la culture  
-   => très shs  
-   => utilisation généralisée de gui)  
- b- les données   
+[Wikipedia](https://fr.wikipedia.org/wiki/G%C3%A9omatique)
+
+Sciences de l'info géo
+
+
+# Les spécificités de la géomatique à l'égard de la reproductibilité  
+## Spécificité culturelle
+   - pratiquants  très SHS  
+   - utilisation généralisée de gui)  
+## Spécificités des données   
    => raster/vecteur,   
    => données lourdes,   
    => données qui changent   
@@ -74,33 +91,27 @@ execute:
    => la carto en dao (pas reproductible)  
    => le trèfles de NicoLambert (art/technique/infographie/?)  
 
-3- Les solutions   
- a- technique   
-    spécifique au domaine   
+# Pistes d'améliorations  
+## Solutions techniques spécifique au domaine   
       =>  GEOS, GDAL, PROJ  
       => adaptation de ggplot2  
       => rgdal/maptools prise en compte par la communauté de ces questions  
       => kart (https://kartproject.org/)  
-    celles utilisées ailleurs marchent aussi => venv, renv  
-      => docker  
-      => guix / nix  
- b- infrastructure  
+## Solutions techniques utilisées ailleurs marchent aussi
+
+- venv, renv  
+- docker  
+-  guix / nix  
+
+##  Infrastructure techniques
     => o2r, codecheck etc.  
- c- la formation (formation initiale, formation continue)  
+## Formation (formation initiale, formation continue)  
     => dans les masters (SAS=>R)  
     => écoles thématiques (SIGR, SAGEO)  
 
+<!--
 
-
-## Qu'est ce que la géomatique ?
-
->La géomatique (...) regroupe l'ensemble des outils et méthodes permettant d'acquérir, de représenter, d'analyser et d'intégrer des données géographiques.   
-La géomatique consiste donc en au moins trois activités distinctes : **collecte**, **traitement** et **diffusion** des données géographiques. 
-
-[Wikipedia](https://fr.wikipedia.org/wiki/G%C3%A9omatique)
-
-Sciences de l'info géo
-
+##
 
 ## 
 
@@ -161,19 +172,16 @@ Giraud, Lambert 2017
 -   recherche d'une esthétique des cartes difficilement reproductible
     -   artisan de la carte
     -   compromis esthétique vs reproductibilité
+-->
 
 ## A venir
 
-### École Thématique Science Ouverte pour les SHS : scripts, codes et logiciels - 22-27 juin 2025
-
--   Inscriptions ouvertes jusqu’au 31 mars 2025
--   [https://so-shs.gitpages.huma-num.fr](https://so-shs.gitpages.huma-num.fr)
-
-### SAGEO - 19-23 mai 2025
-
-Porté par le GdR MAGIS (Méthodes et Applications pour la Géomatique et l'Information Spatiale) https://sageo2025.sciencesconf.org/
-
-[École méthodologique](https://et-magis2025.sciencesconf.org/) : Robustesse dans les méthodologies des Sciences de l'Information Géographique
+- École Thématique Science Ouverte pour les SHS : scripts, codes et logiciels - 22-27 juin 2025
+  - Inscriptions ouvertes jusqu’au 31 mars 2025
+  - [https://so-shs.gitpages.huma-num.fr](https://so-shs.gitpages.huma-num.fr)
+- SAGEO - 19-23 mai 2025
+  - Porté par le GdR MAGIS (Méthodes et Applications pour la Géomatique et l'Information Spatiale) https://sageo2025.sciencesconf.org/
+  - [École méthodologique](https://et-magis2025.sciencesconf.org/) : Robustesse dans les méthodologies des Sciences de l'Information Géographique
 
 
 
@@ -182,8 +190,7 @@ Porté par le GdR MAGIS (Méthodes et Applications pour la Géomatique et l'Info
 Nüst, D., & Pebesma, E. (2020). **Practical Reproducibility in Geography and Geosciences**. Annals of the American Association of Geographers, 111(5), 1300–1310. https://doi.org/10.1080/24694452.2020.1806028
 
 Bivand R.S. (2021). **Progress in the R ecosystem for representing and handling spatial data**.
-Journal of Geographical Systems, 23(4), 515-546. https://doi.org/10.1007/s10109-020-
-00336-
+Journal of Geographical Systems, 23(4), 515-546. https://doi.org/10.1007/s10109-020-00336-0
 
 [o2r](https://o2r.info/about/)
 
