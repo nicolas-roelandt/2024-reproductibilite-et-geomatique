@@ -99,14 +99,18 @@ Sciences de l'information géographique
 
 # Les spécificités de la géomatique à l'égard de la reproductibilité  
 ## Spécificité culturelle
-   - pratiquants  très SHS  
-   - utilisation généralisée de gui)  
+
+- Pratiquants  très SHS  
+- Utilisateurs métier non géomaticiens  
+- Utilisation généralisée de gui
+
 ## Spécificités des données   
    => raster/vecteur,   
    => données lourdes,   
    => données qui changent   
-   => XKCD sur la précision, la généralisation adaptée aux échelles d'analyse  
- c- les pratiques   
+   => XKCD sur la précision, la généralisation adaptée aux échelles d'analyse
+
+## Spécificités des pratiques   
    => la carto en dao (pas reproductible)  
    => le trèfles de NicoLambert (art/technique/infographie/?)  
 
@@ -115,7 +119,8 @@ Sciences de l'information géographique
       =>  GEOS, GDAL, PROJ  
       => adaptation de ggplot2  
       => rgdal/maptools prise en compte par la communauté de ces questions  
-      => kart (https://kartproject.org/)  
+      => kart (https://kartproject.org/)
+
 ## Solutions techniques utilisées ailleurs marchent aussi
 
 - venv, renv  
@@ -123,8 +128,9 @@ Sciences de l'information géographique
 -  guix / nix  
 
 ##  Infrastructure techniques
-    => o2r, codecheck etc.  
-## Formation (formation initiale, formation continue)  
+    => o2r, codecheck etc
+    
+## Formation (initiale ou continue)  
     => dans les masters (SAS=>R)  
     => écoles thématiques (SIGR, SAGEO)  
 
