@@ -66,7 +66,41 @@ execute:
 ---
 
 
-Proposition de plan
+## D'où parlons-nous
+
+:::: {.columns .fragment}
+::: {.column width="40%"}
+### Nicolas Roelandt  
+Géomaticien (Univ. Gustave Eiffel)
+
+:::
+
+::: {.column width="60%"}
+![](./images/logo_univ_gustave_eiffel_rvb.svg){width="300" fig-align="right"}
+:::
+::::
+
+:::: {.columns .fragment}
+::: {.column width="40%"}
+### Timothée Giraud  
+UAR RIATE
+:::
+
+::: {.column width="60%"}
+![](./images/riate.svg){width="300" fig-align="right"}
+:::
+::::
+
+:::: {.fragment}
+### Biais
+
+- Profils SHS
+- Situation potentiellement différente en géographie physique ou en télédétection
+::::
+
+
+
+
 
 # C'est quoi la géomatique ?
 
@@ -79,11 +113,16 @@ Proposition de plan
 
 ![](./images/yes_like_google_maps.png){.fragment width="900"}
 
-![Extrait de What we do in the Shadows](./images/more_layers.png){.fragment width="900"}
+![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/more_layers.png){.fragment width="900"}
 :::
 
 
-## 
+::: {.notes}
+Ces extraits du film What we do in the shadows (En français, *Vampires en toute intimité. Waititi, Clement, 2014)
+:::
+
+## C'est quoi la géomatique ?
+
 >La géomatique (...) regroupe l'ensemble des outils et méthodes permettant d'acquérir, de représenter, d'analyser et d'intégrer des données géographiques.   
 La géomatique consiste donc en au moins trois activités distinctes : **collecte**, **traitement** et **diffusion** des données géographiques. 
 
