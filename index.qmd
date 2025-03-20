@@ -118,10 +118,13 @@ UAR RIATE
 
 
 ::: {.notes}
-Ces extraits du film What we do in the shadows (En français, *Vampires en toute intimité. Waititi, Clement, 2014)
+Ces extraits du film What we do in the shadows (en français, *Vampires en toute intimité*. Waititi, Clement, 2014)
+
+Un des protagonistes du film, Stuart, tente de parler de son travail à une personne
+rencontrée lors d'une soirée.
 :::
 
-## C'est quoi la géomatique ?
+## En vrai, c'est quoi la géomatique ?
 
 >La géomatique (...) regroupe l'ensemble des outils et méthodes permettant d'acquérir, de représenter, d'analyser et d'intégrer des données géographiques.   
 La géomatique consiste donc en au moins trois activités distinctes : **collecte**, **traitement** et **diffusion** des données géographiques. 
@@ -136,18 +139,108 @@ Sciences de l'information géographique
 
 
 
-# Les spécificités de la géomatique à l'égard de la reproductibilité  
+# Spécificités de la géomatique au regard de la reproductibilité  
 ## Spécificité culturelle
 
 - Pratiquants  très SHS  
 - Utilisateurs métier non géomaticiens  
-- Utilisation généralisée de gui
+- Utilisation généralisée de GUI
+
+## Spécificités des données
+
+Représentation numériques différentes des mêmes phénomènes
+
+:::: {.columns .fragment}
+::: {.column width="40%"}
+
+- Données vectorielles 
+  - points, lignes, polygones
+  - données tabulaires associées
+  - plutôt légères
+:::
+::: {.column width="60%"}
+![](./images/Raster_vector_tikz.svg){width="300" fig-align="right"}
+:::
+::::
+
+:::: {.columns .fragment}
+::: {.column width="40%"}
+
+- Données raster 
+  - images satellites, avion, drône
+  - matrices de pixels
+  - souvent lourdes
+:::
+::: {.column width="60%"}
+![](./images/Raster_vector_tikz.svg){width="300" fig-align="right"}
+
+[Johannes Rössel - Raster vector tikz.svg](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.svg) 
+:::
+::::
+
+
+
+## Spécificités des données
+### Problématique des mises à jour
+
+::: {.incremental}
+- Utilisation massive de données dont nous ne sommes pas producteurs
+- Données de référence mises à jour très régulières à très distantes
+- pas de DOI associé, URL stable au mieux
+- Quid des flux de données ?
+:::
+
+::: {.notes}
+Très consommateurs de données de référence (contours de communes ou de région) pour
+les besoins cartographiques. Soit on fournit les données dans le projet soit on les 
+Exemple de Données SENTINEL-2, tous les 5 jours.
+Pour les contours adminstratifs, tous les mois avec une version Code officiel Géographique compatible avec les données INSEE une fois par an.
+
+URL stable, oui mais pendant combien de temps? IGN a récemment changé les services 
+du géoportail vers la plateforme GeoServices, cassant tous les liens.
+
+Concernant les flux (WFS/WMS), il n'existe qu'une version, celle de la dernière 
+mise à jour
+:::
 
 ## Spécificités des données   
-   => raster/vecteur,   
-   => données lourdes,   
-   => données qui changent   
-   => XKCD sur la précision, la généralisation adaptée aux échelles d'analyse
+### Précision
+
+::::: {.columns}
+:::: {.column width="40%"}
+
+- Position de phénomènes à la surface de la Terre
+- Conversion entre systèmes de référence
+- Capacité des ordinateurs à stocker des nombres réels
+::::
+:::: {.column width="60%"}
+::: {#XKCD2170}
+[![](./images/coordinate_precision.png)](https://xkcd.com/2170/)
+
+[xkcd n°2170 - Coordinates precision](https://xkcd.com/2170/)
+:::
+
+::::
+:::::
+
+::: {.notes}
+
+La surface de la Terre bouge et les plaques tectoniques bougent et nous avec (Australie par exemple plusieurs cms/an).
+Les techniques évoluent (théodolite, puis tachéomètre puis GPS).
+Les référentiels aussi (tous les 5 ans en Australie).
+Cela nécessite des conversions entre systèmes, soit contemporains (GPS vers RG93/Lambert93) soit successifs (Lambert zone vers RGF93/Lambert93)
+
+Les ordinateurs modernes sont capables de gérer des nombres flottants avec de nombreux chiffres après la virgule. En géomatique, c'est rarement utile (système légal français, 3 à 4 chiffres après la virgule souvent suffisant). 
+Cela alourdit la donnée et compléxifie les calculs.
+:::
+
+## Spécificités des données
+### Généralisation
+
+- Besoin de résumer l'information pour la cartographier
+- Etape de généralisation adaptée aux échelles d'analyse
+- Algorithmes de généralisation avec des heuristiques
+
 
 ## Spécificités des pratiques   
    => la carto en dao (pas reproductible)  
