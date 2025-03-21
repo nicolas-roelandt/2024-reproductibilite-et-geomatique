@@ -148,35 +148,30 @@ Sciences de l'information géographique
 
 ## Spécificités des données
 
-Représentation numériques différentes des mêmes phénomènes
+Représentations numériques différentes des phénomènes
 
 :::: {.columns .fragment}
-::: {.column width="40%"}
-
-- Données vectorielles 
-  - points, lignes, polygones
-  - données tabulaires associées
-  - plutôt légères
-:::
-::: {.column width="60%"}
-![](./images/Raster_vector_tikz.svg){width="300" fig-align="right"}
-:::
-::::
-
-:::: {.columns .fragment}
-::: {.column width="40%"}
-
+::: {.column width="50%" .incremental}
 - Données raster 
   - images satellites, avion, drône
   - matrices de pixels
   - souvent lourdes
+  
+- Données vectorielles 
+  - points, lignes, polygones
+  - données tabulaires associées
+  - plutôt légères
+  
+- conversion ► perte de données
 :::
-::: {.column width="60%"}
-![](./images/Raster_vector_tikz.svg){width="300" fig-align="right"}
+::: {.column width="50%"}
+![](./images/Raster_vector_tikz.svg){width="500" fig-align="right"}
 
 [Johannes Rössel - Raster vector tikz.svg](https://commons.wikimedia.org/wiki/File:Raster_vector_tikz.svg) 
+
 :::
 ::::
+
 
 
 
