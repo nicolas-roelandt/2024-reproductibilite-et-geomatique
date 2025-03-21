@@ -233,9 +233,32 @@ Cela alourdit la donnée et compléxifie les calculs.
 ## Spécificités des données
 ### Généralisation
 
+::::: {.columns}
+:::: {.column width="40%"}
+
 - Besoin de résumer l'information pour la cartographier
 - Etape de généralisation adaptée aux échelles d'analyse
 - Algorithmes de généralisation avec des heuristiques
+::::
+:::: {.column width="60%"}
+::: {#generalisation}
+[![](./images/tica_a_1717832_f0015_oc.jpg)](https://doi.org/10.1080/23729333.2020.1717832)
+
+[Dumont M. et al., 2020](https://doi.org/10.1080/23729333.2020.1717832)
+:::
+
+::::
+:::::
+
+::: {.notes}
+La carte est un document graphique qui est vecteur d'information et qui
+rapidement en être saturé.
+Le cartographe va chercher à mettre en avant l'information qu'il veut transmettre
+et pour cela il atténue ou masque certains éléments, en regroupe d'autres voir en 
+simplifie la géométrie.
+:::
+
+
 
 
 ## Spécificités des pratiques   
