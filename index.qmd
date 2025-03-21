@@ -258,19 +258,23 @@ et pour cela il atténue ou masque certains éléments, en regroupe d'autres voi
 simplifie la géométrie.
 :::
 
-
-
-
 ## Spécificités des pratiques   
    => la carto en dao (pas reproductible)  
    => le trèfles de NicoLambert (art/technique/infographie/?)  
 
-# Pistes d'améliorations  
-## Solutions techniques spécifique au domaine   
-      =>  GEOS, GDAL, PROJ  
-      => adaptation de ggplot2  
-      => rgdal/maptools prise en compte par la communauté de ces questions  
-      => kart (https://kartproject.org/)
+# Pistes d'amélioration  
+## Solutions techniques spécifiques au domaine 
+
+::: {.incremental}
+- Bibliothèques communes à de nombreux projets 
+  - `GEOS`, `GDAL`, `PROJ`  
+  - gestion des environnements
+- `ggplot2` adapté aux données géo
+  - `cartography`/`mapsf`, `tmap`
+- rgdal/maptools prise en compte par la communauté de ces questions  
+- [`kart`](https://kartproject.org/)
+  - git/guix pour les données géo
+:::
 
 ## Solutions techniques utilisées ailleurs marchent aussi
 
@@ -284,6 +288,7 @@ simplifie la géométrie.
 ## Formation (initiale ou continue)  
     => dans les masters (SAS=>R)  
     => écoles thématiques (SIGR, SAGEO)  
+
 
 <!--
 
