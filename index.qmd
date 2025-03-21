@@ -145,6 +145,7 @@ Sciences de l'information géographique
 - Pratiquants  très SHS  
 - Utilisateurs métier non géomaticiens  
 - Utilisation généralisée de GUI
+  - Appétence au code très variable
 
 ## Spécificités des données
 
