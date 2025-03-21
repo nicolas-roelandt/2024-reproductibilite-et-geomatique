@@ -107,11 +107,11 @@ UAR RIATE
 ## C'est quoi la géomatique ?
 
 ::: {.r-stack}
-![](./images/geodata.png){.fragment width="900"}
+![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/geodata.png){.fragment width="900"}
 
-![](./images/like_google_maps.png){.fragment width="900"}
+![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/like_google_maps.png){.fragment width="900"}
 
-![](./images/yes_like_google_maps.png){.fragment width="900"}
+![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/yes_like_google_maps.png){.fragment width="900"}
 
 ![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/more_layers.png){.fragment width="900"}
 :::
@@ -140,12 +140,20 @@ Sciences de l'information géographique
 
 
 # Spécificités de la géomatique au regard de la reproductibilité  
-## Spécificité culturelle
 
-- Pratiquants  très SHS  
-- Utilisateurs métier non géomaticiens  
-- Utilisation généralisée de GUI
+## Spécificité culturelle 
+
+- La géographie (humaine) est une science plutôt littéraire (en France)
+  - Manque de culture informatique
+  - Utilisation généralisée de GUI
   - Appétence au code très variable
+  - Intérêt pour la programmation lettrée
+- Utilisateurs métier non géomaticiens  
+
+
+
+
+
 
 ## Spécificités des données
 
@@ -259,112 +267,179 @@ simplifie la géométrie.
 :::
 
 ## Spécificités des pratiques   
-   => la carto en dao (pas reproductible)  
-   => le trèfles de NicoLambert (art/technique/infographie/?)  
 
-# Pistes d'amélioration  
-## Solutions techniques spécifiques au domaine 
+::::: {.columns}
+:::: {.column width="50%"}
 
-::: {.incremental}
-- Bibliothèques communes à de nombreux projets 
-  - `GEOS`, `GDAL`, `PROJ`  
-  - gestion des environnements
-- `ggplot2` adapté aux données géo
-  - `cartography`/`mapsf`, `tmap`
-- rgdal/maptools prise en compte par la communauté de ces questions  
-- [`kart`](https://kartproject.org/)
-  - git/guix pour les données géo
+### Utilisation de DAO pour la cartographie
+
+- recherche d'une esthétique des cartes difficilement reproductible
+- artisan de la carte
+- compromis esthétique vs reproductibilité
+
+
+
+::::
+:::: {.column width="50%"}
+::: {#trefle}
+[![](./images/trefle.png)](https://www.routledge.com/Practical-Handbook-of-Thematic-Cartography-Principles-Methods-and-Applications/Lambert-Zanin/p/book/9781032474472)
+
+[Lambert N. et Zanin C., 2020](https://www.routledge.com/Practical-Handbook-of-Thematic-Cartography-Principles-Methods-and-Applications/Lambert-Zanin/p/book/9781032474472)
 :::
 
-## Solutions techniques utilisées ailleurs marchent aussi
+::::
+:::::
 
-- venv, renv  
-- docker  
--  guix / nix  
+::: {.notes}
+La carte est un document graphique qui peut être produit intégralement via des scripts. 
+Mais il s'agit aussi d'un document faisant largement appel à des notions d'esthétique, 
+des choix de design, voir des choix artistiques. 
+Pour ces raisons les cartographes ont souvent recours à des logiciels de dessin vectoriel 
+comme inkscape. 
+Les formats de fichier (SVG) peuvent être suivis dans des système de gestion de version, 
+mais cela n'est pas vraiment utile...
 
-##  Infrastructure techniques
-    => o2r, codecheck etc
+
+:::
+
+
+
+# Les solutions
+
+## Solutions spécifiques 
+
+::: columns
+
+::: {.column width="50%"}
+
+Des bibliothèques libres utilisées par les principaux logiciels du domaine :
+
+* [GDAL](https://doi.org/10.5281/zenodo.14871456) - Geospatial Data Abstraction Library
+* [PROJ](https://proj.org/en/stable/) - Coordinate Transformation Software
+* [GEOS]((https://libgeos.org/)) - Geometry Engine - Open Source
+
+:::
+
+::: {.column width="50%"}
+![[Pebesma et Bivand (2023, chap. 1.7)](https://doi.org/10.1201/9780429459016)](images/sf_deps.png)
+:::
+:::
+
+
+
+
+<!-- - [`kart`](https://kartproject.org/) -->
+
+
+## Solutions spécifiques
+
+Des bibliothègues adaptées aux données et traitement spatiaux :
+
+::: columns
+
+::: {.column width="50%"}
+**En R**
+
+- sf, terra
+- mapsf, tmap, ggplot2 + ggspatial
+
+:::
+
+::: {.column width="50%"}
+**En Python**
+
+shapely, fiona(?), geopanda
+
+:::
+:::
+
+
+<!-- - Python (geopandas, QGIS, pyGMT) -->
+<!-- - R (sf, spdep, RGRASS, qgis-processing) -->
+
+
+
+## Solutions génériques
+
+::: columns
+
+::: {.column width="40%"}
+- **gestionnaires d'environnements** propres aux langages (`venv`, `renv`) 
+- les solutions de **containerisation** (Docker)
+- les solutions **hardcore** &#128540; (guix/nix).
+:::
+
+<!-- - Python : Venv, Conda/Mamba -->
+<!-- - R : renv, CRAN, groundhog -->
+
+
+
+::: {.column width="60%"}
+![[The rocker project](https://rocker-project.org/)](images/rocker.png)
+:::
+:::
+
+::: {.notes}
+Les bibliothèques orientées géo libres génériques et spécifiques aux langages sont disponibles, cela permet 
+d'utiliser les gestionnaires d'environnements** propres aux langages (venv, renv) ou les solutions de containerisation (Docker) souvent nécessaire, voir même les solutions hardcore comme guix ou nix.
+
+Le rocker project propose plein d'images docker pour R, dont une dédiée au spatial
+:::
+
+## Une culture de la reproductibilité
+
+::: columns
+
+::: {.column width="50%"}
+![](images/rgdal_jak.png)
+:::
+
+::: {.column width="50%"}
+Pour accompagner le processus d’archivage des packages :
+
+- Une série de posts de blog (avril 2022, décembre 2022, avril 2023, mai 2023)
+- Plusieurs talks dans des conférences
+- Communications directes aux auteurs de packages dépendants (emails, issues)
+- Message au démarrage des packages :
+
+<pre><code>The legacy packages maptools, rgdal, and rgeos, underpinning the sp package, which was just loaded, will retire in October 2023. Please refer to R-spatial evolution reports for details, especially https://r-spatial.org/r/2023/05/15/evolution4.html.
+It may be desirable to make the sf package available; package maintainers should consider adding sf to Suggests.(...) </code></pre>
+
+
+:::
+:::
+
+
+
+## Infrastructures et inititatives éditoriales
+
+- [o2r](https://o2r.info/about/)
+
+- [Rzine](https://rzine.fr/)
+  
+Les conférences annuelles de l'[AGILE](https://agile-gi.eu/) (Association of Geographique Information Laboratories in Europe) mettent en place une [*Reproducibility Review*](https://agile-gi.eu/conference-2025/reproducibility-review-2025) obligatoire pour les articles acceptés depuis 2021.
+    
     
 ## Formation (initiale ou continue)  
-    => dans les masters (SAS=>R)  
-    => écoles thématiques (SIGR, SAGEO)  
 
-
-# {#title-slide}
-<!--
-
-##
-
-## 
+- Les masters spécialisés en géomatique font une place de plus en plus importante à la programmation. 
+  
+- Plusieurs évènement de formation se tiennent depuis quelques années 
+  - [Sciences de l'information géographique reproductibles](https://sigr2021.github.io/site/)(2021)
+  - [Recherche reproductible : regards croisés en SHS](https://ja-mate2022.sciencesconf.org/) (JA 2022 du Réseau Mate-SHS)
 
 
 
-
-## Reproductibilité computationnelle en géomatique
-
-- Python (geopandas, QGIS, pyGMT)
-- R (sf, spdep, RGRASS, qgis-processing, Mapsf/tmap)
-
-## Reproductibilité des environnements
-
-Mobilisation des mêmes outils
-
-### Outils construits autour des langages
-
-- Python : Venv, Conda/Mamba
-- R : renv, CRAN, groundhog
-
-### Containers, Package managers
-
-- Guix
-- Rix
-- https://hub.docker.com/r/rocker/geospatial
-
-
-## Problématiques
-
-- Variabilité des jeux de données de référence
-- Culture géographique vs culture informatique
-- Utilisation massive des GUI
-
-> "The use of graphical user interface (GUI) in computer sciences in general and cartography in particular is irrefutably a step toward more user-friendliness. But this step comes at the price of the growth of, if not impossible, at least difficult reproducible procedures. (...)   
-Scripting solutions can appear as a step back for cartographers that learn computed cartography with proprietary software languages (ARC Macro Language designed by ESRI in 1986, or SAS macros). We argue that, in the reproducible research framework, researchers have to use literate programming solutions that enable the full traceability of their studies."
-
-Giraud, Lambert 2017
-
-
-## Variabilité des jeux de données de référence
-
--   utilisation massive de jeux de données de référence
-    -   traitements spatiaux
--   pas d'identifiants uniques à la publication
--   au mieux des URL "stables"
--   Variabilité importante
-    -   fusion/défusion de communes : 1 jeu de données/mois
-    -   pas d'historique des jeux de données IGN avant 2017
-
-## Culture géographique vs culture informatique
-
--   Géographie humaine :
-    -   parcours très littéraire
-    -   branche quantitativiste très active
-    -   intérêt pour la programmation lettrée
--   manque de culture informatique
-    -   frein à la prise en main des outils programmatiques
--   recherche d'une esthétique des cartes difficilement reproductible
-    -   artisan de la carte
-    -   compromis esthétique vs reproductibilité
--->
 
 ## A venir
 
 - École Thématique Science Ouverte pour les SHS : scripts, codes et logiciels - 22-27 juin 2025
   - Inscriptions ouvertes jusqu’au 31 mars 2025
   - [https://so-shs.gitpages.huma-num.fr](https://so-shs.gitpages.huma-num.fr)
+  
 - SAGEO - 19-23 mai 2025
   - Porté par le GdR MAGIS (Méthodes et Applications pour la Géomatique et l'Information Spatiale) https://sageo2025.sciencesconf.org/
   - [École méthodologique](https://et-magis2025.sciencesconf.org/) : Robustesse dans les méthodologies des Sciences de l'Information Géographique
-
 
 
 ## References
@@ -374,6 +449,13 @@ Nüst, D., & Pebesma, E. (2020). **Practical Reproducibility in Geography and Ge
 Bivand R.S. (2021). **Progress in the R ecosystem for representing and handling spatial data**.
 Journal of Geographical Systems, 23(4), 515-546. https://doi.org/10.1007/s10109-020-00336-0
 
-[o2r](https://o2r.info/about/)
+
 
 Giraud, T., Lambert, N. (2017). **Reproducible Cartography**. In: Peterson, M. (eds) Advances in Cartography and GIScience. ICACI 2017. Lecture Notes in Geoinformation and Cartography(). Springer, Cham. https://doi.org/10.1007/978-3-319-57336-6_13
+
+
+
+
+# {#title-slide}
+
+
