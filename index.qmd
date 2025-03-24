@@ -405,6 +405,7 @@ d'utiliser les gestionnaires d'environnements propres aux langages (venv, renv) 
 Le rocker project propose plein d'images docker pour R, dont une dédiée au spatial
 :::
 
+<!--
 ## Une culture de la reproductibilité
 
 ::: columns
@@ -427,7 +428,7 @@ It may be desirable to make the sf package available; package maintainers should
 
 :::
 :::
-
+-->
 
 
 ## Infrastructures et inititatives éditoriales
