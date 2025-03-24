@@ -212,13 +212,13 @@ mise à jour
 ### Précision
 
 ::::: {.columns}
-:::: {.column width="40%"}
+:::: {.column width="55%"}
 
 - Position de phénomènes à la surface de la Terre
 - Conversion entre systèmes de référence
 - Capacité des ordinateurs à stocker des nombres réels
 ::::
-:::: {.column width="60%"}
+:::: {.column width="45%"}
 ::: {#XKCD2170}
 [![](./images/coordinate_precision.png)](https://xkcd.com/2170/)
 
