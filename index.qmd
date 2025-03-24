@@ -1,6 +1,6 @@
 ---
 title: "Reproductibilité et Géomatique"
-
+subtitle: "link.infini.fr/rrr-2025-reproductibilite-geomatique"
 author:
   - name: Timothée Giraud
     orcid: 0000-0002-1932-3323
@@ -31,6 +31,8 @@ highlight-style: kate
 
 format: 
   revealjs:
+    template-partials:
+      - title-slide.html
     auto-stretch: false
     preview-links: false
     fig-align: center
@@ -46,7 +48,7 @@ logo: ./images/FRRN_logo_small.png
 title-slide-attributes: 
   data-background-image: ./images/logos.svg
   data-background-size: 75%
-  data-background-position: bottom 125px center
+  data-background-position: bottom 250px left 187px
   data-background-opacity: "0.95"
 slide-number: true
  
@@ -275,7 +277,7 @@ simplifie la géométrie.
 ### Utilisation de DAO pour la cartographie
 
 - Recherche d'une esthétique des cartes difficilement reproductible
-- Artisan de la carte
+- Artiste/Artisan de la carte
 - Compromis esthétique vs reproductibilité
 
 
@@ -296,7 +298,7 @@ La carte est un document graphique qui peut être produit intégralement via des
 Mais il s'agit aussi d'un document faisant largement appel à des notions d'esthétique, 
 des choix de design, voir des choix artistiques. 
 Pour ces raisons les cartographes ont souvent recours à des logiciels de dessin vectoriel 
-comme inkscape. 
+comme inkscape ou leurs équivalents propriétaires. 
 Les formats de fichier (SVG) peuvent être suivis dans des système de gestion de version, 
 mais cela n'est pas vraiment utile...
 
@@ -340,9 +342,9 @@ Des bibliothèques adaptées aux données et traitements spatiaux :
   - `terra`
   - `qgis-processing`
 - Cartographie
-  - `mapsf`,
-  - `tmap`, 
-  - ``ggplot2` + `ggspatial`
+  - `mapsf`
+  - `tmap`
+  - `ggplot2` + `ggspatial`
 
 :::
 
@@ -360,7 +362,7 @@ Des bibliothèques adaptées aux données et traitements spatiaux :
 :::
 :::
 
-- [`kart`](https://kartproject.org/) (git-like pour les données vectorielles)
+**[`kart`](https://kartproject.org/)** (git-like pour les données vectorielles)
 
 <!-- - Python (geopandas, QGIS, pyGMT) -->
 <!-- - R (sf, spdep, RGRASS, qgis-processing) -->
