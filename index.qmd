@@ -468,5 +468,3 @@ Giraud, T., Lambert, N. (2017). **Reproducible Cartography**. In: Peterson, M. (
 
 
 # {#title-slide}
-
-
