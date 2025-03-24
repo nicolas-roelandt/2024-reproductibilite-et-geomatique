@@ -326,12 +326,6 @@ Des bibliothèques libres utilisées par les principaux logiciels du domaine :
 :::
 :::
 
-
-
-
-<!-- - [`kart`](https://kartproject.org/) -->
-
-
 ## Solutions spécifiques
 
 Des bibliothèques adaptées aux données et traitements spatiaux :
@@ -341,19 +335,32 @@ Des bibliothèques adaptées aux données et traitements spatiaux :
 ::: {.column width="50%"}
 **En R**
 
-- `sf`, `terra`, `qgis-processing`
-- `mapsf`, `tmap`, `ggplot2 + ggspatial`
+- Lecture et manipulation des données
+  - `sf`
+  - `terra`
+  - `qgis-processing`
+- Cartographie
+  - `mapsf`,
+  - `tmap`, 
+  - ``ggplot2` + `ggspatial`
 
 :::
 
 ::: {.column width="50%"}
 **En Python**
 
-`rasterio`, `shapely`, `fiona`(?), `geopandas`, `PyQGIS`
+- Lecture et manipulation des données
+  - `rasterio`
+  - `shapely`
+  - `fiona`
+- Solutions *tout-en-un*
+  - `geopandas`
+  - `PyQGIS`
 
 :::
 :::
 
+- [`kart`](https://kartproject.org/) (git-like pour les données vectorielles)
 
 <!-- - Python (geopandas, QGIS, pyGMT) -->
 <!-- - R (sf, spdep, RGRASS, qgis-processing) -->
