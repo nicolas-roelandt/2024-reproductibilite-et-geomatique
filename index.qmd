@@ -151,6 +151,7 @@ Sciences de l'information géographique
   - Utilisation généralisée de GUI
   - Appétence au code très variable
   - Intérêt pour la programmation lettrée
+- Utilisateurs hors ESR
 - Utilisateurs métier non géomaticiens  
 
 
@@ -241,7 +242,7 @@ Les ordinateurs modernes sont capables de gérer des nombres flottants avec de n
 Cela alourdit la donnée et compléxifie les calculs.
 :::
 
-## Spécificités des données
+## Spécificités des pratiques
 ### Généralisation
 
 ::::: {.columns}
@@ -253,9 +254,9 @@ Cela alourdit la donnée et compléxifie les calculs.
 ::::
 :::: {.column width="60%"}
 ::: {#generalisation}
-[![](./images/tica_a_1717832_f0015_oc.jpg)](https://doi.org/10.1080/23729333.2020.1717832)
+[![](./images/generalisation.png)](https://shs.cairn.info/manuel-de-cartographie--9782200612856?lang=fr)
 
-[Dumont M. et al., 2020](https://doi.org/10.1080/23729333.2020.1717832)
+[Manuel de cartographie, Lambert N., Zanin C., 2016](https://shs.cairn.info/manuel-de-cartographie--9782200612856?lang=fr)
 :::
 
 ::::
@@ -321,6 +322,8 @@ Des bibliothèques libres utilisées par les principaux logiciels du domaine :
 * [PROJ](https://proj.org/en/stable/) - Coordinate Transformation Software
 * [GEOS]((https://libgeos.org/)) - Geometry Engine - Open Source
 
+**[`kart`](https://kartproject.org/)** (git-like pour les données vectorielles)
+
 :::
 
 ::: {.column width="50%"}
@@ -362,7 +365,7 @@ Des bibliothèques adaptées aux données et traitements spatiaux :
 :::
 :::
 
-**[`kart`](https://kartproject.org/)** (git-like pour les données vectorielles)
+
 
 <!-- - Python (geopandas, QGIS, pyGMT) -->
 <!-- - R (sf, spdep, RGRASS, qgis-processing) -->
@@ -377,6 +380,10 @@ Des bibliothèques adaptées aux données et traitements spatiaux :
 - **gestionnaires d'environnements** propres aux langages (`venv`, `renv`) 
 - les solutions de **containerisation** (Docker)
 - les solutions **hardcore** &#128540; (guix/nix).
+
+. . . 
+
+Où placer le curseur ?
 :::
 
 <!-- - Python : Venv, Conda/Mamba -->
