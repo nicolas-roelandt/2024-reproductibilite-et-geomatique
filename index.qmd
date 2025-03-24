@@ -211,6 +211,7 @@ Concernant les flux (WFS/WMS), il n'existe qu'une version, celle de la dernière
 mise à jour
 :::
 
+<!--
 ## Spécificités des données   
 ### Précision
 
@@ -241,6 +242,7 @@ Cela nécessite des conversions entre systèmes, soit contemporains (GPS vers RG
 Les ordinateurs modernes sont capables de gérer des nombres flottants avec de nombreux chiffres après la virgule. En géomatique, c'est rarement utile (système légal français, 3 à 4 chiffres après la virgule souvent suffisant). 
 Cela alourdit la donnée et compléxifie les calculs.
 :::
+-->
 
 ## Spécificités des pratiques
 ### Généralisation
