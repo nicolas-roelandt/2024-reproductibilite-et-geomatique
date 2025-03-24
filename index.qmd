@@ -95,6 +95,7 @@ UAR RIATE
 ### Biais
 
 - Profils SHS
+- Utilisateurs de R
 - Situation potentiellement différente en géographie physique ou en télédétection
 ::::
 
@@ -171,7 +172,7 @@ Représentations numériques différentes des phénomènes
   - données tabulaires associées
   - plutôt légères
   
-- conversion ► perte de données
+- conversion ► perte d'information
 :::
 ::: {.column width="50%"}
 ![](./images/Raster_vector_tikz.svg){width="500" fig-align="right"}
@@ -189,7 +190,7 @@ Représentations numériques différentes des phénomènes
 
 ::: {.incremental}
 - Utilisation massive de données dont nous ne sommes pas producteurs
-- Données de référence mises à jour très régulières à très distantes
+- Données de référence: mises à jour très régulières à très distantes
 - pas de DOI associé, URL stable au mieux
 - Quid des flux de données ?
 :::
@@ -340,15 +341,15 @@ Des bibliothèques adaptées aux données et traitements spatiaux :
 ::: {.column width="50%"}
 **En R**
 
-- sf, terra
-- mapsf, tmap, ggplot2 + ggspatial
+- `sf`, `terra`, `qgis-processing`
+- `mapsf`, `tmap`, `ggplot2 + ggspatial`
 
 :::
 
 ::: {.column width="50%"}
 **En Python**
 
-shapely, fiona(?), geopandas
+`rasterio`, `shapely`, `fiona`(?), `geopandas`, `PyQGIS`
 
 :::
 :::
@@ -423,7 +424,8 @@ Les conférences annuelles de l'[AGILE](https://agile-gi.eu/) (Association of Ge
 ## Formation (initiale ou continue)  
 
 - Les masters spécialisés en géomatique font une place de plus en plus importante à la programmation.
-  
+  - Plus de gens formés au code
+  - Reproductibilité des environnements peu ou pas évoquée
 - Plusieurs évènements de formation se tiennent depuis quelques années 
   - [Sciences de l'information géographique reproductibles](https://sigr2021.github.io/site/)(2021)
   - [Recherche reproductible : regards croisés en SHS](https://ja-mate2022.sciencesconf.org/) (JA 2022 du Réseau Mate-SHS)
@@ -442,16 +444,16 @@ Les conférences annuelles de l'[AGILE](https://agile-gi.eu/) (Association of Ge
   - [École méthodologique](https://et-magis2025.sciencesconf.org/) : Robustesse dans les méthodologies des Sciences de l'Information Géographique
 
 
-## References
+## Références
 
-Nüst, D., & Pebesma, E. (2020). **Practical Reproducibility in Geography and Geosciences**. Annals of the American Association of Geographers, 111(5), 1300–1310. https://doi.org/10.1080/24694452.2020.1806028
+Nüst, D., & Pebesma, E. (2020). **Practical Reproducibility in Geography and Geosciences**. Annals of the American Association of Geographers, 111(5), 1300–1310. <https://doi.org/10.1080/24694452.2020.1806028/>
 
 Bivand R.S. (2021). **Progress in the R ecosystem for representing and handling spatial data**.
-Journal of Geographical Systems, 23(4), 515-546. https://doi.org/10.1007/s10109-020-00336-0
+Journal of Geographical Systems, 23(4), 515-546. <https://doi.org/10.1007/s10109-020-00336-0/>
 
 
 
-Giraud, T., Lambert, N. (2017). **Reproducible Cartography**. In: Peterson, M. (eds) Advances in Cartography and GIScience. ICACI 2017. Lecture Notes in Geoinformation and Cartography(). Springer, Cham. https://doi.org/10.1007/978-3-319-57336-6_13
+Giraud, T., Lambert, N. (2017). **Reproducible Cartography**. In: Peterson, M. (eds) Advances in Cartography and GIScience. ICACI 2017. Lecture Notes in Geoinformation and Cartography(). Springer, Cham. <https://doi.org/10.1007/978-3-319-57336-6_13/>
 
 
 
