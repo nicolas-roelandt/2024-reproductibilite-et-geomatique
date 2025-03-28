@@ -368,11 +368,11 @@ Le rocker project propose plein d'images docker pour R, dont une dédiée au spa
 
 ## Infrastructures et inititatives éditoriales
 
-- [o2r](https://o2r.info/about/)
+- Le projet [o2r](https://o2r.info/about/) (Opening Reproducible Research)
 
-- [Rzine](https://rzine.fr/)
+- La revue [Rzine](https://rzine.fr/)
   
-Les conférences annuelles de l'[AGILE](https://agile-gi.eu/) (Association of Geographique Information Laboratories in Europe) mettent en place une [*Reproducibility Review*](https://agile-gi.eu/conference-2025/reproducibility-review-2025) obligatoire pour les articles acceptés depuis 2021.
+- L'[AGILE](https://agile-gi.eu/) (Association of Geographic Information Laboratories in Europe) met en place une [*Reproducibility Review*](https://agile-gi.eu/conference-2025/reproducibility-review-2025) lors de ces conférences annuelles.
     
     
 ## Formation (initiale ou continue)  
@@ -390,8 +390,8 @@ Les conférences annuelles de l'[AGILE](https://agile-gi.eu/) (Association of Ge
   - Inscriptions ouvertes jusqu’au 04 avril 2025
   - [https://so-shs.gitpages.huma-num.fr](https://so-shs.gitpages.huma-num.fr)
   
-- SAGEO - 19-23 mai 2025
-  - Porté par le GdR MAGIS (Méthodes et Applications pour la Géomatique et l'Information Spatiale) https://sageo2025.sciencesconf.org/
+- [SAGEO](https://sageo2025.sciencesconf.org/) - 19-23 mai 2025
+  - Porté par le GdR MAGIS (Méthodes et Applications pour la Géomatique et l'Information Spatiale)
   - [École méthodologique](https://et-magis2025.sciencesconf.org/) : Robustesse dans les méthodologies des Sciences de l'Information Géographique
 
 
