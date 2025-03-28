@@ -415,4 +415,16 @@ Lovelace, R., Nowosad, J. et Muenchow, J. (2025). **Geocomputation with R**. CRC
 
 Nüst, D., & Pebesma, E. (2020). **Practical Reproducibility in Geography and Geosciences**. Annals of the American Association of Geographers, 111(5), 1300–1310. <https://doi.org/10.1080/24694452.2020.1806028/>
 
+## Que retenir ?
+::: {.incremental}
+- Géomatique pas récent
+- Culture orientée SHS en France
+- Evolution des outils portée par l'industrie
+- Avancée des sciences de l'information
+- Diffusion des connaissances
+  - packages
+  - événements
+  - interventions
+:::
+
 # {#title-slide}
