@@ -144,7 +144,7 @@ Sciences de l'information géographique
 
 :::: {.columns .fragment}
 ::: {.column width="50%" .incremental}
-- 1854 - premiers éléments d'analyse spatiale (J. Snow)
+- 1854 - Début de l'analyse spatiale (J. Snow)
 - 1950s - Cartographie assistée par ordinateur (W. Tobler)
 - 1960 - Kriegage (G. Matheron, D. Krige) 
 - 1963 - *Geographical Information System* (R. Tomlinson)
@@ -361,7 +361,7 @@ Des bibliothèques adaptées aux données et traitements spatiaux :
 - les solutions de **containerisation** (Docker)
 - les solutions **hardcore** &#128540; (guix/nix).
 
-. . . 
+<br/>
 
 Où placer le curseur ?
 :::
