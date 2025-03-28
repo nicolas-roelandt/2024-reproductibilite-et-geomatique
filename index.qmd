@@ -210,36 +210,36 @@ Concernant les flux (WFS/WMS), il n'existe qu'une version, celle de la dernière
 mise à jour
 :::
 
-## Spécificités des données   
-### Précision
+<!-- ## Spécificités des données    -->
+<!-- ### Précision -->
 
-::::: {.columns}
-:::: {.column width="40%"}
+<!-- ::::: {.columns} -->
+<!-- :::: {.column width="40%"} -->
 
-- Position de phénomènes à la surface de la Terre
-- Conversion entre systèmes de référence
-- Capacité des ordinateurs à stocker des nombres réels
-::::
-:::: {.column width="60%"}
-::: {#XKCD2170}
-[![](./images/coordinate_precision.png)](https://xkcd.com/2170/)
+<!-- - Position de phénomènes à la surface de la Terre -->
+<!-- - Conversion entre systèmes de référence -->
+<!-- - Capacité des ordinateurs à stocker des nombres réels -->
+<!-- :::: -->
+<!-- :::: {.column width="60%"} -->
+<!-- ::: {#XKCD2170} -->
+<!-- [![](./images/coordinate_precision.png)](https://xkcd.com/2170/) -->
 
-[xkcd n°2170 - Coordinates precision](https://xkcd.com/2170/)
-:::
+<!-- [xkcd n°2170 - Coordinates precision](https://xkcd.com/2170/) -->
+<!-- ::: -->
 
-::::
-:::::
+<!-- :::: -->
+<!-- ::::: -->
 
-::: {.notes}
+<!-- ::: {.notes} -->
 
-La surface de la Terre bouge et les plaques tectoniques bougent et nous avec (Australie par exemple plusieurs cms/an).
-Les techniques évoluent (théodolite, puis tachéomètre puis GPS).
-Les référentiels aussi (tous les 5 ans en Australie).
-Cela nécessite des conversions entre systèmes, soit contemporains (GPS vers RG93/Lambert93) soit successifs (Lambert zone vers RGF93/Lambert93)
+<!-- La surface de la Terre bouge et les plaques tectoniques bougent et nous avec (Australie par exemple plusieurs cms/an). -->
+<!-- Les techniques évoluent (théodolite, puis tachéomètre puis GPS). -->
+<!-- Les référentiels aussi (tous les 5 ans en Australie). -->
+<!-- Cela nécessite des conversions entre systèmes, soit contemporains (GPS vers RG93/Lambert93) soit successifs (Lambert zone vers RGF93/Lambert93) -->
 
-Les ordinateurs modernes sont capables de gérer des nombres flottants avec de nombreux chiffres après la virgule. En géomatique, c'est rarement utile (système légal français, 3 à 4 chiffres après la virgule souvent suffisant). 
-Cela alourdit la donnée et compléxifie les calculs.
-:::
+<!-- Les ordinateurs modernes sont capables de gérer des nombres flottants avec de nombreux chiffres après la virgule. En géomatique, c'est rarement utile (système légal français, 3 à 4 chiffres après la virgule souvent suffisant).  -->
+<!-- Cela alourdit la donnée et compléxifie les calculs. -->
+<!-- ::: -->
 
 ## Spécificités des données
 ### Généralisation
@@ -328,6 +328,12 @@ Des bibliothèques libres utilisées par les principaux logiciels du domaine :
 :::
 :::
 
+
+
+**[`kart`](https://kartproject.org/)** (git-like pour les données vectorielles)
+
+
+
 ## Solutions spécifiques
 
 Des bibliothèques adaptées aux données et traitements spatiaux :
@@ -355,6 +361,7 @@ Des bibliothèques adaptées aux données et traitements spatiaux :
   - `rasterio`
   - `shapely`
   - `fiona`
+  - `xarray`
 - Solutions *tout-en-un*
   - `geopandas`
   - `PyQGIS`
@@ -362,7 +369,6 @@ Des bibliothèques adaptées aux données et traitements spatiaux :
 :::
 :::
 
-**[`kart`](https://kartproject.org/)** (git-like pour les données vectorielles)
 
 <!-- - Python (geopandas, QGIS, pyGMT) -->
 <!-- - R (sf, spdep, RGRASS, qgis-processing) -->
@@ -396,28 +402,28 @@ d'utiliser les gestionnaires d'environnements propres aux langages (venv, renv) 
 Le rocker project propose plein d'images docker pour R, dont une dédiée au spatial
 :::
 
-## Une culture de la reproductibilité
+<!-- ## Une culture de la reproductibilité -->
 
-::: columns
+<!-- ::: columns -->
 
-::: {.column width="50%"}
-![](images/rgdal_jak.png)
-:::
+<!-- ::: {.column width="50%"} -->
+<!-- ![](images/rgdal_jak.png) -->
+<!-- ::: -->
 
-::: {.column width="50%"}
-Pour accompagner le processus d’archivage des packages :
+<!-- ::: {.column width="50%"} -->
+<!-- Pour accompagner le processus d’archivage des packages : -->
 
-- Une série de posts de blog (avril 2022, décembre 2022, avril 2023, mai 2023)
-- Plusieurs talks dans des conférences
-- Communications directes aux auteurs de packages dépendants (emails, issues)
-- Message au démarrage des packages :
+<!-- - Une série de posts de blog (avril 2022, décembre 2022, avril 2023, mai 2023) -->
+<!-- - Plusieurs talks dans des conférences -->
+<!-- - Communications directes aux auteurs de packages dépendants (emails, issues) -->
+<!-- - Message au démarrage des packages : -->
 
-<pre><code>The legacy packages maptools, rgdal, and rgeos, underpinning the sp package, which was just loaded, will retire in October 2023. Please refer to R-spatial evolution reports for details, especially https://r-spatial.org/r/2023/05/15/evolution4.html.
-It may be desirable to make the sf package available; package maintainers should consider adding sf to Suggests.(...) </code></pre>
+<!-- <pre><code>The legacy packages maptools, rgdal, and rgeos, underpinning the sp package, which was just loaded, will retire in October 2023. Please refer to R-spatial evolution reports for details, especially https://r-spatial.org/r/2023/05/15/evolution4.html. -->
+<!-- It may be desirable to make the sf package available; package maintainers should consider adding sf to Suggests.(...) </code></pre> -->
 
 
-:::
-:::
+<!-- ::: -->
+<!-- ::: -->
 
 
 
