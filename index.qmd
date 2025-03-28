@@ -1,6 +1,6 @@
 ---
 title: "Reproductibilité et Géomatique"
-subtitle: "link.infini.fr/rrr-2025-reproductibilite-geomatique"
+subtitle: "https://page.hn/5zpvbd"
 author:
   - name: Timothée Giraud
     orcid: 0000-0002-1932-3323
@@ -381,13 +381,13 @@ Les conférences annuelles de l'[AGILE](https://agile-gi.eu/) (Association of Ge
   - Plus de gens formés au code
   - Reproductibilité des environnements peu ou pas évoquée
 - Plusieurs évènements de formation se tiennent depuis quelques années 
-  - [Sciences de l'information géographique reproductibles](https://sigr2021.github.io/site/)(2021)
+  - [Sciences de l'information géographique reproductibles](https://sigr2021.github.io/site/) (2021)
   - [Recherche reproductible : regards croisés en SHS](https://ja-mate2022.sciencesconf.org/) (JA 2022 du Réseau Mate-SHS)
 
 ## A venir
 
 - École Thématique Science Ouverte pour les SHS : scripts, codes et logiciels - 22-27 juin 2025
-  - Inscriptions ouvertes jusqu’au 31 mars 2025
+  - Inscriptions ouvertes jusqu’au 04 avril 2025
   - [https://so-shs.gitpages.huma-num.fr](https://so-shs.gitpages.huma-num.fr)
   
 - SAGEO - 19-23 mai 2025
