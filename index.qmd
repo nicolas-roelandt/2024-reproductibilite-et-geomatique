@@ -140,7 +140,19 @@ La géomatique consiste donc en au moins trois activités distinctes : **collect
 Sciences de l'information géographique
 :::
 
+## Bref historique
 
+- 1854 - premiers éléments d'analyse spatiale (J. Snow)
+- 1950s - Cartographie assistée par ordinateur (W. Tobler)
+- 1960 - Kriegage (G. Matheron, D. Krige) 
+- 1963 - *Geographical Information System* (R. Tomlinson)
+- 1969 - Fondation d'ESRI
+- 1970 - Première loi de géographie (W. Tobler)
+- 1982 - Création de GRASS
+- 2002 - Création de QGIS
+- 2004 - Arrivée d'OpenStreetMap
+- 2005 - Arrivée de Google Maps
+- 2007 - Premier Iphone
 
 # Spécificités de la géomatique au regard de la reproductibilité  
 
@@ -385,13 +397,10 @@ Les conférences annuelles de l'[AGILE](https://agile-gi.eu/) (Association of Ge
 
 ## Références
 
-Nüst, D., & Pebesma, E. (2020). **Practical Reproducibility in Geography and Geosciences**. Annals of the American Association of Geographers, 111(5), 1300–1310. <https://doi.org/10.1080/24694452.2020.1806028/>
-
-Bivand R.S. (2021). **Progress in the R ecosystem for representing and handling spatial data**.
-Journal of Geographical Systems, 23(4), 515-546. <https://doi.org/10.1007/s10109-020-00336-0/>
-
-
-
 Giraud, T., Lambert, N. (2017). **Reproducible Cartography**. In: Peterson, M. (eds) Advances in Cartography and GIScience. ICACI 2017. Lecture Notes in Geoinformation and Cartography(). Springer, Cham. <https://doi.org/10.1007/978-3-319-57336-6_13/>
+
+Lovelace, R., Nowosad, J. et Muenchow, J. (2025). **Geocomputation with R**. CRC Press. https://r.geocompx.org/  
+
+Nüst, D., & Pebesma, E. (2020). **Practical Reproducibility in Geography and Geosciences**. Annals of the American Association of Geographers, 111(5), 1300–1310. <https://doi.org/10.1080/24694452.2020.1806028/>
 
 # {#title-slide}
