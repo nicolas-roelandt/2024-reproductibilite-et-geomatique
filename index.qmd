@@ -48,7 +48,7 @@ logo: ./images/FRRN_logo_small.png
 title-slide-attributes: 
   data-background-image: ./images/logos.svg
   data-background-size: 75%
-  data-background-position: bottom 250px left 187px
+  data-background-position: bottom 320px left 187px
   data-background-opacity: "0.95"
 slide-number: true
  
@@ -142,6 +142,8 @@ Sciences de l'information géographique
 
 ## Bref historique
 
+:::: {.columns .fragment}
+::: {.column width="50%" .incremental}
 - 1854 - premiers éléments d'analyse spatiale (J. Snow)
 - 1950s - Cartographie assistée par ordinateur (W. Tobler)
 - 1960 - Kriegage (G. Matheron, D. Krige) 
@@ -153,6 +155,16 @@ Sciences de l'information géographique
 - 2004 - Arrivée d'OpenStreetMap
 - 2005 - Arrivée de Google Maps
 - 2007 - Premier Iphone
+:::
+::: {.column width="50%"}
+![](./images/Snow-cholera-map-1.jpg){width="500" fig-align="right"}
+
+[John Snow - On the Mode of Communication of Cholera (1854)](https://upload.wikimedia.org/wikipedia/commons/2/27/Snow-cholera-map-1.jpg) 
+
+:::
+::::
+
+
 
 # Spécificités de la géomatique au regard de la reproductibilité  
 
