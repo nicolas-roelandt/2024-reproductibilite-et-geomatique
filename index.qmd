@@ -33,6 +33,8 @@ format:
   revealjs:
     template-partials:
       - title-slide.html
+    revealjs-plugins:
+      - pdfexport
     auto-stretch: false
     preview-links: false
     fig-align: center
@@ -43,12 +45,12 @@ format:
     width: 1050
     height: 700
     embed-resources: true
-    footer: "Webinaire Recherche Reproductible - 28 mars 2025" 
+    footer: "Webinaire Recherche Reproductible - 28 mars 2025 - CC-BY-SA" 
 logo: ./images/FRRN_logo_small.png
 title-slide-attributes: 
   data-background-image: ./images/logos.svg
   data-background-size: 75%
-  data-background-position: bottom 320px left 187px
+  data-background-position: bottom 280px left 187px
   data-background-opacity: "0.95"
 slide-number: true
  
@@ -93,31 +95,29 @@ UAR RIATE
 :::
 ::::
 
-:::: {.fragment}
+
 ### Biais
 
 - Profils SHS
 - Utilisateurs de R
 - Situation potentiellement différente en géographie physique ou en télédétection
-::::
-
-
-
 
 
 # C'est quoi la géomatique ?
 
 ## C'est quoi la géomatique ?
 
-::: {.r-stack}
-![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/geodata.png){.fragment width="900"}
+![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/geodata.png){ width="900"}
 
-![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/like_google_maps.png){.fragment width="900"}
+## C'est quoi la géomatique ?
+![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/like_google_maps.png){ width="900"}
 
-![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/yes_like_google_maps.png){.fragment width="900"}
+## C'est quoi la géomatique ?
+![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/yes_like_google_maps.png){ width="900"}
 
-![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/more_layers.png){.fragment width="900"}
-:::
+## C'est quoi la géomatique ?
+![Extraits du film What we do in the shadows (Waititi, Clement, 2014)](./images/more_layers.png){width="900"}
+
 
 
 ::: {.notes}
@@ -140,10 +140,10 @@ La géomatique consiste donc en au moins trois activités distinctes : **collect
 Sciences de l'information géographique
 :::
 
-## Bref historique
+## Bref historique {.smaller}
 
 :::: {.columns .fragment}
-::: {.column width="50%" .incremental}
+::: {.column width="60%"}
 - 1854 - Début de l'analyse spatiale (J. Snow)
 - 1950s - Cartographie assistée par ordinateur (W. Tobler)
 - 1960 - Kriegage (G. Matheron, D. Krige) 
@@ -156,7 +156,7 @@ Sciences de l'information géographique
 - 2005 - Arrivée de Google Maps
 - 2007 - Premier Iphone
 :::
-::: {.column width="50%"}
+::: {.column width="40%"}
 ![](./images/Snow-cholera-map-1.jpg){width="500" fig-align="right"}
 
 [John Snow - On the Mode of Communication of Cholera (1854)](https://upload.wikimedia.org/wikipedia/commons/2/27/Snow-cholera-map-1.jpg) 
@@ -183,7 +183,7 @@ Sciences de l'information géographique
 Représentations numériques différentes des phénomènes
 
 :::: {.columns .fragment}
-::: {.column width="50%" .incremental}
+::: {.column width="50%"}
 - Données raster 
   - images satellites, avion, drône
   - matrices de pixels
